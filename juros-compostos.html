@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Compostos</title>
+    <link rel="stylesheet" href="../../assets/css/imc.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calcular Juros Compostos</h1>
+        <label for="principal">Capital Inicial (R$):</label>
+        <input type="number" id="principal" placeholder="Ex: 1000">
+        <label for="rate">Taxa de Juros (% ao mês):</label>
+        <input type="number" step="0.01" id="rate" placeholder="Ex: 1.5">
+        <label for="time">Tempo (meses):</label>
+        <input type="number" id="time" placeholder="Ex: 12">
+        <button onclick="calculateCompoundInterest()">Calcular Juros</button>
+        <p id="compoundResult"></p>
+        <a href="../../index.html" class="back-button">Voltar ao Hub</a>
+    </div>
+    <script src="../js/juros-compostos.js"></script>
+</body>
+
+</html>
